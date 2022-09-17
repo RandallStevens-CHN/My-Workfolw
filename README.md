@@ -2,6 +2,8 @@
 github workflow的学习
 ## 创建步骤
   1.在仓库中  .github/workflows/ 目录下创建workflow
+ 
+ 
   2.具体配置
      name: learn-github-actions （在action中显示的workflow名，可选）
      on: [push]                 （触发器，可配置多个）
@@ -17,4 +19,8 @@ github workflow的学习
         - run: bats -v
        
   3.说明
+      支持的触发器很多有多种 见 https://docs.github.com/cn/actions/using-workflows/events-that-trigger-workflows#schedule
+      常用的：
+        schedule  按时间触发
+        
 
